@@ -20,10 +20,16 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
-	</head>
+		<script>
+			window.onload = function() {
+    document.getElementById("my_audio").play();
+}
+		</script>
+	
+</head>
 	<body>
 
-		<audio controls autoplay>
+		<audio controls autoplay id="my_audio">
 			<source src="mp3/hbd.mp3.mp3" type="audio/mpeg">
 		  </audio>
 
